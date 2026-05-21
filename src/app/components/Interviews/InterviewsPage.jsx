@@ -40,11 +40,11 @@ const Interviews = () => {
 
     try {
       const [interviewsRes, applicantsRes] = await Promise.all([
-        fetch("https://e-recuite-api-inmpf.ondigitalocean.app/api/hr/allInterviews", {
+        fetch("https://waterfall-api-nnsgg.ondigitalocean.app/api/hr/allInterviews", {
           method: "GET",
           headers: { Accept: "application/json" }
         }),
-        fetch("https://e-recuite-api-inmpf.ondigitalocean.app/api/hr/all_applicants", {
+        fetch("https://waterfall-api-nnsgg.ondigitalocean.app/api/hr/all_applicants", {
           method: "GET",
           headers: { Accept: "application/json" }
         })

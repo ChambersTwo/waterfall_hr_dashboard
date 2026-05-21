@@ -17,7 +17,7 @@ export default function LoginPage() {
     setError("");
 
     try {
-      const res = await fetch("https://sayc-app-api-39gxh.ondigitalocean.app/api/hr/hrLogin", {
+      const res = await fetch("https://waterfall-api-nnsgg.ondigitalocean.app/api/hr/hrLogin", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),
@@ -44,8 +44,8 @@ export default function LoginPage() {
         {/* Logo */}
         <div className="flex justify-center mb-6">
           <Image
-            src="https://res.cloudinary.com/dbuuizuka/image/upload/v1772065331/SAYC-Lower-Resolution-Logo-150x150_pw1bg9.png"
-            alt="SAYC Logo"
+            src="https://res.cloudinary.com/dbuuizuka/image/upload/v1779309523/Waterfall-chambers-logo-horizontal_enhanced_nopayoff_transp_background_n1udp6.png"
+            alt="Waterfall Logo"
             width={80}
             height={80}
             className="rounded-full"
@@ -107,7 +107,7 @@ export default function LoginPage() {
         </form>
 
         <p className="text-center text-xs text-gray-400 mt-6">
-          © {new Date().getFullYear()} SAYC Recruitment Portal
+          © {new Date().getFullYear()} Waterfall Chambers Recruitment Portal
         </p>
       </div>
     </div>

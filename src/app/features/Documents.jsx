@@ -31,7 +31,7 @@ const DocumentsModal = ({ onClose }) => {
       setError("");
 
       const response = await axios.get(
-        "https://e-recuite-api-inmpf.ondigitalocean.app/api/admin/allDocuments"
+        "https://waterfall-api-nnsgg.ondigitalocean.app/api/admin/allDocuments"
       );
 
       // Map API response to frontend table format
@@ -94,7 +94,7 @@ const DocumentsModal = ({ onClose }) => {
       return;
 
     try {
-      await axios.delete(`https://e-recuite-api-inmpf.ondigitalocean.app/api/hr/documents/${doc.id}`);
+      await axios.delete(`https://waterfall-api-nnsgg.ondigitalocean.app/api/hr/documents/${doc.id}`);
       fetchDocuments();
     } catch {
       alert("Failed to delete document.");

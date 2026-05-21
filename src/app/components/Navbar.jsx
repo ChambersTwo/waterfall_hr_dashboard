@@ -38,7 +38,7 @@ const Navbar = () => {
     const fetchHRMembers = async () => {
       try {
         const response = await axios.get(
-          "https://e-recuite-api-inmpf.ondigitalocean.app/api/hr/allHRMembers",
+          "https://waterfall-api-nnsgg.ondigitalocean.app/api/hr/allHRMembers",
           { headers: { Accept: "application/json" } }
         );
 
@@ -65,7 +65,7 @@ const Navbar = () => {
     const fetchApplicants = async () => {
       try {
         const response = await axios.get(
-          "https://e-recuite-api-inmpf.ondigitalocean.app/api/hr/all_applicants",
+          "https://waterfall-api-nnsgg.ondigitalocean.app/api/hr/all_applicants",
           { headers: { Accept: "application/json" } }
         );
 

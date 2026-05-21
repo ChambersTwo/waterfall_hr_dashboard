@@ -39,7 +39,7 @@ const JobPosts = () => {
 
       try {
         const response = await fetch(
-          'https://e-recuite-api-inmpf.ondigitalocean.app/api/candidate/allPosts'
+          'https://waterfall-api-nnsgg.ondigitalocean.app/api/candidate/allPosts'
         );
 
         if (!response.ok) {

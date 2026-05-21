@@ -21,7 +21,7 @@ const ProfileSettings = ({ onClose, embedded = false }) => {
         if (!userId) return;
 
         const response = await axios.get(
-          'https://e-recuite-api-inmpf.ondigitalocean.app/api/hr/allHRMembers',
+          'https://waterfall-api-nnsgg.ondigitalocean.app/api/hr/allHRMembers',
           {
             headers: {
               Accept: 'application/json',

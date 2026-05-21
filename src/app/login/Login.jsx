@@ -17,7 +17,7 @@ export default function LoginPage() {
     setError("");
 
     try {
-      const res = await fetch("https://e-recuite-api-inmpf.ondigitalocean.app/api/hr/hrLogin", {
+      const res = await fetch("https://waterfall-api-nnsgg.ondigitalocean.app/api/hr/hrLogin", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         credentials: "include",
@@ -107,7 +107,7 @@ export default function LoginPage() {
         </form>
 
         <p className="text-center text-xs text-gray-400 mt-6">
-          © {new Date().getFullYear()} SAYC Recruitment Portal
+          © {new Date().getFullYear()} Waterfall Chambers Recruitment Portal
         </p>
       </div>
     </div>

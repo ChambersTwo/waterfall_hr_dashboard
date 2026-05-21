@@ -130,7 +130,7 @@ const CandidateDetailsPanel = ({ candidate, isOpen, onClose, onSuccess }) => {
 
     try {
       const response = await fetch(
-        `https://e-recuite-api-inmpf.ondigitalocean.app/api/hr/candidateEvaluation/${employeeId}/${candidate.id}/${candidate.job_id}`,
+        `https://waterfall-api-nnsgg.ondigitalocean.app/api/hr/candidateEvaluation/${employeeId}/${candidate.id}/${candidate.job_id}`,
         {
           method: "POST",
           headers: {
@@ -191,7 +191,7 @@ const CandidateDetailsPanel = ({ candidate, isOpen, onClose, onSuccess }) => {
 
     try {
       const response = await fetch(
-        `https://e-recuite-api-inmpf.ondigitalocean.app/api/hr/interviewCandidate/${employeeId}/${candidate.id}/${candidate.job_id}`,
+        `https://waterfall-api-nnsgg.ondigitalocean.app/api/hr/interviewCandidate/${employeeId}/${candidate.id}/${candidate.job_id}`,
         { method: "POST",
           headers: {
           "Content-Type": "application/json",
@@ -246,7 +246,7 @@ const CandidateDetailsPanel = ({ candidate, isOpen, onClose, onSuccess }) => {
 
     try {
       const response = await fetch(
-        `https://e-recuite-api-inmpf.ondigitalocean.app/api/hr/sendOffer/${employeeId}/${candidate.id}`,
+        `https://waterfall-api-nnsgg.ondigitalocean.app/api/hr/sendOffer/${employeeId}/${candidate.id}`,
         {
           method: "POST",
           headers: {
@@ -286,7 +286,7 @@ const CandidateDetailsPanel = ({ candidate, isOpen, onClose, onSuccess }) => {
 
       try {
         const response = await fetch(
-          `https://e-recuite-api-inmpf.ondigitalocean.app/api/candidate/myJobOffers/${candidate.id}`
+          `https://waterfall-api-nnsgg.ondigitalocean.app/api/candidate/myJobOffers/${candidate.id}`
         );
 
         if (!response.ok) {
@@ -297,7 +297,7 @@ const CandidateDetailsPanel = ({ candidate, isOpen, onClose, onSuccess }) => {
 
         console.log("Fetched offers:", data); // Debugging
 
-        setOffers(data || []); // <-- FIXED
+        setOffers(data || []);
         setSelectedOffer(null); // Reset selection when candidate changes
 
       } catch (err) {
@@ -313,7 +313,7 @@ const CandidateDetailsPanel = ({ candidate, isOpen, onClose, onSuccess }) => {
 
   // ====== Onboard Candidate ======
   const handleOnboardConfirm = async () => {
-    console.log("🔥 Onboard button clicked");
+    console.log("Onboard button clicked");
 
     const token = sessionStorage.getItem("access_token");
 
@@ -342,7 +342,7 @@ const CandidateDetailsPanel = ({ candidate, isOpen, onClose, onSuccess }) => {
 
     try {
       const response = await fetch(
-        `https://e-recuite-api-inmpf.ondigitalocean.app/api/hr/onboardEmployee/${employeeId}/${candidate.id}`,
+        `https://waterfall-api-nnsgg.ondigitalocean.app/api/hr/onboardEmployee/${employeeId}/${candidate.id}`,
         {
           method: "POST",
           headers: {
@@ -401,7 +401,7 @@ const CandidateDetailsPanel = ({ candidate, isOpen, onClose, onSuccess }) => {
 
   try {
     const response = await fetch(
-      `https://e-recuite-api-inmpf.ondigitalocean.app/api/hr/updateApplicationStatus/${employeeId}/${candidate.id}`,
+      `https://waterfall-api-nnsgg.ondigitalocean.app/api/hr/updateApplicationStatus/${employeeId}/${candidate.id}`,
       {
         method: "POST",
         headers: {
@@ -454,7 +454,7 @@ const CandidateDetailsPanel = ({ candidate, isOpen, onClose, onSuccess }) => {
 
     try {
       const response = await fetch(
-        "https://e-recuite-api-inmpf.ondigitalocean.app/api/hr/sendCandidateMessage",
+        "https://waterfall-api-nnsgg.ondigitalocean.app/api/hr/sendCandidateMessage",
         {
           method: "POST",
           headers: {

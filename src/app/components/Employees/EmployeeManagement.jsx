@@ -103,7 +103,7 @@ const EmployeeManagement = ({ isOpen, onClose, formData }) => {
       };
 
       const response = await fetch(
-        `https://e-recuite-api-inmpf.ondigitalocean.app/api/hr/updateEmployee/${employeeData.id}`,
+        `https://waterfall-api-nnsgg.ondigitalocean.app/api/hr/updateEmployee/${employeeData.id}`,
         {
           method: "POST",
           headers: {
@@ -163,7 +163,7 @@ const EmployeeManagement = ({ isOpen, onClose, formData }) => {
 
     try {
       const response = await axios.post(
-        `https://e-recuite-api-inmpf.ondigitalocean.app/api/hr/deleteCandidate/${employeeId}/${candidateId}`,
+        `https://waterfall-api-nnsgg.ondigitalocean.app/api/hr/deleteCandidate/${employeeId}/${candidateId}`,
         {
           employee_id: employeeId,
           candidate_id: candidateId,

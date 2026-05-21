@@ -18,11 +18,10 @@ const NotificationsModal = ({ onClose }) => {
     const fetchApplicants = async () => {
       try {
         const response = await axios.get(
-          "https://e-recuite-api-inmpf.ondigitalocean.app/api/hr/all_applicants",
+          "https://waterfall-api-nnsgg.ondigitalocean.app/api/hr/all_applicants",
           {
             headers: {
               "Accept": "application/json",
-              // If you use JWT add:
               // Authorization: `Bearer ${token}`
             }
           }

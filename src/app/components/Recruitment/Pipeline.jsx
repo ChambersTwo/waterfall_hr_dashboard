@@ -17,7 +17,7 @@ const PipelineModal = ({ selectedJob }) => {
     const fetchPipelineData = async () => {
       setLoading(true);
 
-      const base = "https://e-recuite-api-inmpf.ondigitalocean.app";
+      const base = "https://waterfall-api-nnsgg.ondigitalocean.app";
       const token = sessionStorage.getItem("access_token");
 
       try {

@@ -24,7 +24,7 @@ const DeleteJobModal = ({
 
     try {
       const response = await fetch(
-        `https://e-recuite-api-inmpf.ondigitalocean.app/api/hr/deletePost/${employeeId}/${jobId}`,
+        `https://waterfall-api-nnsgg.ondigitalocean.app/api/hr/deletePost/${employeeId}/${jobId}`,
         {
           method: "POST",
           headers: {

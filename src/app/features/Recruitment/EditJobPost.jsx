@@ -243,7 +243,7 @@ const EditJobPost = ({ onClose, onSave, existingJob = null }) => {
     };
 
       const jobPostRes = await postJSON(
-        `https://e-recuite-api-inmpf.ondigitalocean.app/api/hr/job_post/edit`,
+        `https://waterfall-api-nnsgg.ondigitalocean.app/api/hr/job_post/edit`,
         token,
         jobPostPayload
       );
@@ -267,7 +267,7 @@ const EditJobPost = ({ onClose, onSave, existingJob = null }) => {
           offered_salary: Number(formData.offeringSalary || 0),
         };
         await postJSON(
-          `https://e-recuite-api-inmpf.ondigitalocean.app/api/hr/job_filters/edit`,
+          `https://waterfall-api-nnsgg.ondigitalocean.app/api/hr/job_filters/edit`,
           token,
           jobFiltersPayload
         );

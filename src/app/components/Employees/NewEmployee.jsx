@@ -95,7 +95,7 @@ const NewEmployee = ({ isOpen, onClose, creatorEmployeeId }) => {
       };
 
       const response = await fetch(
-        "https://e-recuite-api-inmpf.ondigitalocean.app/api/hr/addNewEmployee",
+        "https://waterfall-api-nnsgg.ondigitalocean.app/api/hr/addNewEmployee",
         {
           method: "POST",
           headers: {

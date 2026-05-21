@@ -36,7 +36,7 @@ export default function MFAPage() {
 
     try {
       const res = await fetch(
-        "https://e-recuite-api-inmpf.ondigitalocean.app/api/hr/hrAuth",
+        "https://waterfall-api-nnsgg.ondigitalocean.app/api/hr/hrAuth",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -69,7 +69,7 @@ export default function MFAPage() {
 
     try {
       const res = await fetch(
-        `https://e-recuite-api-inmpf.ondigitalocean.app/api/hr/resendMFA/${userId}`,
+        `https://waterfall-api-nnsgg.ondigitalocean.app/api/hr/resendMFA/${userId}`,
         { method: "POST" }
       );
       const data = await res.json();
@@ -93,7 +93,7 @@ export default function MFAPage() {
         <div className="flex justify-center mb-6">
           <Image
             src="https://res.cloudinary.com/dbuuizuka/image/upload/v1779309523/Waterfall-chambers-logo-horizontal_enhanced_nopayoff_transp_background_n1udp6.png"
-            alt="SAYC Logo"
+            alt="Waterfall Logo"
             width={80}
             height={80}
             className="rounded-full"
